@@ -68,7 +68,10 @@ namespace Calculator
                         Environment.Exit(0);
                         break;
                     default:
-                        Console.WriteLine("Выберете действие из списка!");
+                        Console.WriteLine("Такого действия нет!");
+                        System.Threading.Thread.Sleep(500);
+                        Console.Clear();
+                        check = 1;
                         break;
                 }
             } while (check == 1);
